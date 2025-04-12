@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life Grind RPG</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <h1>Welkom bij Life Grind RPG</h1>
@@ -22,7 +20,6 @@
     </header>
 
     <main>
-        <!-- Profielsectie -->
         <section id="profile">
             <h2>Jouw Profiel</h2>
             <p>Level: <span id="player-level">5</span></p>
@@ -32,7 +29,6 @@
             </div>
         </section>
 
-        <!-- Quests Sectie -->
         <section id="quests">
             <h2>Actieve Quests</h2>
             <form action="#">
@@ -43,17 +39,8 @@
                 <label for="quest1-incomplete">Niet Voltooid</label><br>
                 <input type="submit" value="Update Quest Status">
             </form>
-            <form action="#">
-                <label for="quest2">Quest 2: Verzamel 50 houtblokken</label><br>
-                <input type="radio" id="quest2-complete" name="quest2" value="complete">
-                <label for="quest2-complete">Voltooid</label><br>
-                <input type="radio" id="quest2-incomplete" name="quest2" value="incomplete">
-                <label for="quest2-incomplete">Niet Voltooid</label><br>
-                <input type="submit" value="Update Quest Status">
-            </form>
         </section>
 
-        <!-- Winkel Sectie -->
         <section id="shop">
             <h2>Winkel</h2>
             <p>Coins: <span id="player-coins">1000</span></p>
@@ -64,10 +51,8 @@
             </ul>
         </section>
 
-        <!-- Leaderboard Sectie -->
         <section id="leaderboard">
             <h2>Leaderboard</h2>
-            <p>Toon de voortgang van je vrienden hier.</p>
             <ul>
                 <li>Vriend 1 - Level 10 - 8000 XP</li>
                 <li>Vriend 2 - Level 8 - 6000 XP</li>
@@ -79,7 +64,5 @@
     <footer>
         <p>&copy; 2025 Life Grind RPG</p>
     </footer>
-
 </body>
-
 </html>
