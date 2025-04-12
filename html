@@ -1,3 +1,85 @@
-<div class="progress-container">
-    <div class="progress-bar" style="width: 60%;">60%</div>
-</div>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Grind RPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welkom bij Life Grind RPG</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profiel</a></li>
+                <li><a href="#quests">Quests</a></li>
+                <li><a href="#shop">Winkel</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Profielsectie -->
+        <section id="profile">
+            <h2>Jouw Profiel</h2>
+            <p>Level: <span id="player-level">5</span></p>
+            <p>XP: <span id="player-xp">3000</span> / 5000</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 60%;">60%</div>
+            </div>
+        </section>
+
+        <!-- Quests Sectie -->
+        <section id="quests">
+            <h2>Actieve Quests</h2>
+            <form action="#">
+                <label for="quest1">Quest 1: Oogst 100 groenten</label><br>
+                <input type="radio" id="quest1-complete" name="quest1" value="complete">
+                <label for="quest1-complete">Voltooid</label><br>
+                <input type="radio" id="quest1-incomplete" name="quest1" value="incomplete">
+                <label for="quest1-incomplete">Niet Voltooid</label><br>
+                <input type="submit" value="Update Quest Status">
+            </form>
+            <form action="#">
+                <label for="quest2">Quest 2: Verzamel 50 houtblokken</label><br>
+                <input type="radio" id="quest2-complete" name="quest2" value="complete">
+                <label for="quest2-complete">Voltooid</label><br>
+                <input type="radio" id="quest2-incomplete" name="quest2" value="incomplete">
+                <label for="quest2-incomplete">Niet Voltooid</label><br>
+                <input type="submit" value="Update Quest Status">
+            </form>
+        </section>
+
+        <!-- Winkel Sectie -->
+        <section id="shop">
+            <h2>Winkel</h2>
+            <p>Coins: <span id="player-coins">1000</span></p>
+            <ul>
+                <li><button>Koop nieuwe gear - 500 coins</button></li>
+                <li><button>Koop een nieuwe pet - 800 coins</button></li>
+                <li><button>Verhoog je XP met 1000 - 1000 coins</button></li>
+            </ul>
+        </section>
+
+        <!-- Leaderboard Sectie -->
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <p>Toon de voortgang van je vrienden hier.</p>
+            <ul>
+                <li>Vriend 1 - Level 10 - 8000 XP</li>
+                <li>Vriend 2 - Level 8 - 6000 XP</li>
+                <li>Vriend 3 - Level 6 - 4000 XP</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Life Grind RPG</p>
+    </footer>
+
+</body>
+
+</html>
